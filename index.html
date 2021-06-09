@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Hunghsuan&#39;s blog</title>
+<link rel="shortcut icon" href="https://lihunghsuan.tk/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://lihunghsuan.tk/media/css/tailwind.css">
+<link rel="stylesheet" href="https://lihunghsuan.tk/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Hunghsuan&#39;s blog - Atom Feed" href="https://lihunghsuan.tk/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB92BHYTD7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-HB92BHYTD7');
+  </script>
+    
+
+  <meta name="description" content="放在這裏的話一般都説得很有道理，比如這句。" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首頁
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        歸檔
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        標簽
+      </a>
+    
+      <a href="https://lihunghsuan.tk/post/The-Last-Supper" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        《最後的晚餐》
+      </a>
+    
+      <a href="https://lihunghsuan.tk/post/fitness" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        健身打卡
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        關於
+      </a>
+    
+    <a href="https://lihunghsuan.tk/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      Hunghsuan&#39;s blog
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      放在這裏的話一般都説得很有道理，比如這句。
+    </div>
+    
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="/post/about" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >LET&#39;S TALK!</a>
+      </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+          <div class="text-gray-500 mr-2">
+            Follow me 👉
+          </div>
+        
+        
+          
+            
+              <div class="relative mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 transition-fast dark:hover:bg-gray-600 wechat">
+                <i class="ri-wechat-line"></i>
+                <img src="\media\images\custom-wechat.png" alt="" class="absolute left-0 w-32" style="max-width: initial; top: 100%;" >
+              </div>
+            
+          
+        
+          
+            
+              <a href="mailto:lihunghsuan@icloud.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-mail-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://github.com/LiHunghsuan" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-github-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <a href="http://wpa.qq.com/msgrd?V=3&amp;uin=463512145&amp;Site=QQ&amp;Menu=yes" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-qq-line"></i>
+              </a>
+            
+          
+        
+      </div>
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://lihunghsuan.tk/images/avatar.png?v=1623203430023" alt="Hunghsuan&#39;s blog" width="100%" height="100%">
+  </div>
+</header>
+      
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/Lie-flat-and-have-three-children/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          躺平與三胎
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-06-06</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+
+為什麽凡是經濟越來越發達的地區，就出現越來越不願意生育的問題，用一句最簡單的話來總結：
+
+人類隨著社會的發展，因爲追求經濟而導致越來越多的欲望和需求，給你制造的門檻越來越高。
+怎麽理解呢？
+理論上
+石器時代
+假如我們現在都還生活在石器時...
+      </div>
+      <a href="https://lihunghsuan.tk/post/Lie-flat-and-have-three-children/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/Japanese-nuclear-waste-water/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          日本福島核廢水 爭議一次看
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-06-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+福島核電廠核子事故發生至今已逾10年，日本政府花這麼久才在今天（2021-04-13）拍板將「核廢水」排放入海，主因核電廠腹地內的儲水槽數量已逼近極限，考量科學分析及海外慣例後做出決定。
+要排放入海的核廢水何來？
+紐約時報與法新社指出，2...
+      </div>
+      <a href="https://lihunghsuan.tk/post/Japanese-nuclear-waste-water/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/2021-Hualong-Middle-School-Campus-Science-and-Technology-Culture-Festival/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2021 年化龍中學校園科技文化節
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-05-24</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+體驗創新·快樂成長
+4 月初開了個小會，拿到了一份《番禺區化龍中學 2021 年校園科技文化節活動方案》
+
+為了進一步培養我校全體學生科普意識、營造科教氛圍，提升學生科學素養，為番禺區第 37 屆青少年創新大賽甄選優秀作品，在總結往屆科技...
+      </div>
+      <a href="https://lihunghsuan.tk/post/2021-Hualong-Middle-School-Campus-Science-and-Technology-Culture-Festival/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/Extracurricular-practical-activities-for-seventh-grade-students/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          七年級課外實踐活動
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-05-08</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+徒步研學活動
+集隊
+今天，七年級全體學生要去育龍山生態樂園參加徒步研學活動。（4 公里徒步過去的，感覺很辛苦哈哈哈）
+前幾天都在下雨，本以爲今天天氣也會很差的，但是一大早就已經下完雨了，學生們踩著積水集隊，聼級長和教官强調完注意事項之後，...
+      </div>
+      <a href="https://lihunghsuan.tk/post/Extracurricular-practical-activities-for-seventh-grade-students/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/vaccine/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          疫苗
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-03-24</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+在新聞發布會上公布的國產疫苗，它的保護率是 79.34%，實現安全性、有效性、可及性、可負擔性的統一，達到了世界衛生組織和國家藥監局相關標准要求。
+
+這 79%的保護效力的數據要低於在歐美世界已經開打的 Moderna（莫德鈉）和輝瑞（煇...
+      </div>
+      <a href="https://lihunghsuan.tk/post/vaccine/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/joke/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          JOKE
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-06-04</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        鄭智化 - 水手
+ 
+錯誤❌
+
+
+
+
+
+一位中國的專家說的話，讓媒體宣傳，以至於人民相信板藍根能預防新冠病毒，最後還需要一位在美國的專家來解釋來結束這場鬧劇
+...
+      </div>
+      <a href="https://lihunghsuan.tk/post/joke/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/windows/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Windows
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-04-11</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>Windows要用的東西</p>
+
+      </div>
+      <a href="https://lihunghsuan.tk/post/windows/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/music-test/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          音樂庫擴展計劃
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-03-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        由於我以前只聽歌不記歌名，導致很多耳熟能詳的歌缺不知道叫什麽名字而煩惱，甚至想再聼也很難搜索。
+如果您也有這樣的經歷，也可以在這找一下，説不定就找回來了！
+歡迎在評論區留下您的音樂庫，可以是歌名 歌手 專輯 鏈接，來豐富我的音樂庫，如果可以...
+      </div>
+      <a href="https://lihunghsuan.tk/post/music-test/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/musictag/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          音樂標簽 MusicTag 使用教程
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-03-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        『音樂標簽』是一款可以編輯歌曲的標題，專輯，藝術家等信息的應用程序， 支持 FLAC, APE, WAV, AIFF, WV, TTA, MP3, MP4, M4A, OGG, MPC, OPUS, WMA, DSF, DFF 等音頻格式，...
+      </div>
+      <a href="https://lihunghsuan.tk/post/musictag/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://lihunghsuan.tk/post/Teach/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          上課
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2021-03-19</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        早上第四節第五節課試著上數學課
+
+...
+      </div>
+      <a href="https://lihunghsuan.tk/post/Teach/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+    
+      <a href="https://lihunghsuan.tk/page/2" class="btn btn-white">
+        下一頁
+        <i class="ri-arrow-right-line ml-4"></i>
+      </a>
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Copyright © <a href="https://lihunghsuan.tk" target="_blank">LiHunghsuan</a> 版權所有.
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://lihunghsuan.tk/media/scripts/main.js"></script>
+</body>
+
+</html>
